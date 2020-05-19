@@ -1,0 +1,37 @@
+{% extends 'event/base.html' %}
+{% block content %}
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    .letters{
+      font-family: 'Lobster', cursive;
+    }
+  </style>
+</head>
+ <article class="media card">
+    
+    <div class="media-body">
+      <div class="article-metadata">
+        
+
+      </div>
+      <h4 class="article-title"><font class="letters" color="#006400">Registration Details!</font></h4>
+      	<hr />
+     
+     <h4 class="article-content"><font class="letters" color="#8B008B">Registration number :</font><font class="letters" color="red"> {{ object.registration_number }}</h4></font>
+     <h4 class="article-content"><font class="letters" color="#8B008B">Name :</font><font class="letters"> {{ object.full_name }}</h4></font>
+
+      <h4 class="article-content "><font class="letters" color="#8B008B">Mobile number :</font><font class="letters" > {{ object.mobile_number }}</h4></font>
+    
+      <h4 class="card-body "><font class="letters" color="#8B008B">Registration-Type : </font><font class="letters">{{ object.registration_type }}</h4>
+      <h4 class="card-body ">Number Of tickets Booked : {{ object.number_of_tickets }}</h4></font>
+      <hr />
+      <h4 align="center"><font class="letters" color="#8B008B"> Id-Card Image</h4></font>
+      <img width=500px,height=200px src="{{ object.id_card.url}}" />
+      <hr />
+<a class='btn btn-outline-warning' href="{% url 'event-update'  object.id %}">Change my details!</a>
+<a class='btn btn-outline-danger' href="{% url 'event-delete' object.id %}">Cancel Registration</a>
+<a class="btn btn-outline-info" href="{% url 'home-view' object.id  %}">Confirm and return to homepage</a>
+</div>
+</article>
+{% endblock %}

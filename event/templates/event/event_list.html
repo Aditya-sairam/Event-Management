@@ -1,0 +1,46 @@
+
+{% extends "event/base.html" %}
+<head>
+    <style>
+        .container{
+            background-color : "#FFFFFF" 
+        }
+    </style>
+
+{% block content%}
+
+<article class="media card">
+    
+    <div class="media-body">
+
+    <h2>Registred list</h2>
+    <hr />
+    <div align="center">
+    <form class="form-inline" action="" method="GET">
+        {{ form }}
+        <button class="btn" type="submit">Search</button>
+        </fieldset>
+    </form>
+</div>
+<hr />
+
+    <table class="table table-bordered table-condensed">
+        <tr>
+            <th>Name</th>
+            <th>Registraion-Number</th>
+            <th>Registration Type</th>
+            <th> Date of Registration</th>
+        </tr>
+        {% for object in object_list %}
+        <tr>
+            <td><a href="{% url 'event-detail' object.id %}">{{object.full_name}}</a></td>
+            <td>{{object.registration_number}}</td>
+            <td>{{object.registration_type}}</td>
+            <td>{{ object.date_registered|date:"F d, Y" }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</article>
+
+{% endblock %}
