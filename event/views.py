@@ -46,6 +46,7 @@ class EventCreateView(CreateView):
 
 class EventDetailView(DetailView):
     model = Event
+    
 
 class EventUpdateView(UpdateView):
     model = Event

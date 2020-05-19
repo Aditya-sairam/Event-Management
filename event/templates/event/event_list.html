@@ -28,14 +28,14 @@
         <tr>
             <th>Name</th>
             <th>Registraion-Number</th>
-            <th>Registration Type</th>
+            
             <th> Date of Registration</th>
         </tr>
         {% for object in object_list %}
         <tr>
             <td><a href="{% url 'event-detail' object.id %}">{{object.full_name}}</a></td>
             <td>{{object.registration_number}}</td>
-            <td>{{object.registration_type}}</td>
+        
             <td>{{ object.date_registered|date:"F d, Y" }}</td>
         </tr>
         {% endfor %}
