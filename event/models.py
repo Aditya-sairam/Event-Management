@@ -14,7 +14,7 @@ CHOICES = (('self','self'),('group','group'),('corporate','corporate'),('others'
 class Event(models.Model):
 	full_name = models.CharField(max_length=500)
 	registration_number = models.IntegerField(null=True)
-	mobile_number = models.IntegerField(null=True)
+	mobile_number = models.CharField(max_length=500,null=True)
 	id_card = models.ImageField(upload_to='images')
 	registration_type=models.CharField(max_length=100,choices=CHOICES)
 	number_of_tickets = models.IntegerField(default=1)
