@@ -27,7 +27,7 @@
       <h4 class="card-body ">Number Of tickets Booked : {{ object.number_of_tickets }}</h4></font>
       <hr />
       <h4 align="center"><font class="letters" color="#8B008B"> Id-Card Image</h4></font>
-      <img width=500px,height=200px src="{{ object.id_card.url}}" />
+      <img width=100px,height=200px src="{{ object.id_card.url}}" />
       <hr />
 <a class='btn btn-outline-warning' href="{% url 'event-update'  object.id %}">Change my details!</a>
 <a class='btn btn-outline-danger' href="{% url 'event-delete' object.id %}">Cancel Registration</a>
