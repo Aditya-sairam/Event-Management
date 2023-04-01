@@ -19,6 +19,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from event import views as event_views
 from django.contrib.auth import views as auth_views
+#from django.views.static import serve
+#from django.conf.urls.static import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,7 +34,9 @@ urlpatterns = [
     path('home/<int:event_id>',event_views.HomeView,name='home-view'),
 
     path('login/', auth_views.LoginView.as_view(template_name='event/login.html'), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(template_name='event/logout.html'), name='logout')
+    path('logout/', auth_views.LogoutView.as_view(template_name='event/logout.html'), name='logout'),
+    # url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    #url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 
 
 ]
