@@ -22,5 +22,7 @@ Super User Login Details</br>
 UserName - Test_User</br>
 Password - Testing@06</br>
 
+<h6> Event List Page </h6>
+![Event_List](https://github.com/Aditya-sairam/Event-Management/assets/37501823/61932840-d48d-4201-973b-9d7ffe7e06c1)
 
 
