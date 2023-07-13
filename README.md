@@ -13,9 +13,10 @@ A Web App that lets ogranizations manage event bookings, Analyse the same using 
 * FrontEnd - HTML,CSS, Charts.js </br>
 * Hosting Service - Python Anywhere.
 
-Event List : 
+<b><u>Event List : 
 
 ![Event_List](https://github.com/Aditya-sairam/Event-Management/assets/37501823/b58f0704-01ac-43ba-b4df-e59662ba755f)
 
-Analysis Chart : 
+<b><u>Analysis Chart : 
 
+![Event_Chart](https://github.com/Aditya-sairam/Event-Management/assets/37501823/bc15edd0-723b-46c9-b3d2-6946a112ef9b)
