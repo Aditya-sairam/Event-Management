@@ -13,6 +13,10 @@ A Web App that lets ogranizations manage event bookings, Analyse the same using 
 * FrontEnd - HTML,CSS, Charts.js </br>
 * Hosting Service - Python Anywhere.
 
+Event List : 
+
+![Event_List](https://github.com/Aditya-sairam/Event-Management/assets/37501823/b58f0704-01ac-43ba-b4df-e59662ba755f)
+
 <u>Links :</u></br> 
 Super-User Login : http://adityasairam.pythonanywhere.com/login/  </br>
 End-User Registration : http://adityasairam.pythonanywhere.com/create </br>
