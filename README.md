@@ -17,12 +17,5 @@ Event List :
 
 ![Event_List](https://github.com/Aditya-sairam/Event-Management/assets/37501823/b58f0704-01ac-43ba-b4df-e59662ba755f)
 
-<u>Links :</u></br> 
-Super-User Login : http://adityasairam.pythonanywhere.com/login/  </br>
-End-User Registration : http://adityasairam.pythonanywhere.com/create </br>
-
-<u>Credentials for Demo :</u> </br>
-Super User Login Details</br>
-UserName - Test_User</br>
-Password - Testing@06</br>
+Analysis Chart : 
 
